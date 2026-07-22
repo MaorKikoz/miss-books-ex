@@ -1,0 +1,31 @@
+/* flex helpers */
+
+.flex {
+  display: flex;
+}
+
+.flex.flex-column {
+    flex-direction: column;
+}
+
+.flex.justify-center {
+    justify-content: center;
+}
+
+.flex.justify-between {
+    justify-content: space-between;
+}
+
+.flex.align-center {
+    align-items: center;
+}
+
+/* Grid Helpers */
+
+.fluid-grid {
+    --min-column-width: 180px;
+
+    display: grid;
+    grid-template-columns: 
+        repeat(auto-fit, minmax(var(--min-column-width), 1fr));
+}

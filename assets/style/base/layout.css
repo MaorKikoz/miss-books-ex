@@ -1,0 +1,24 @@
+.main-layout {
+    --gutter-width: 1.6em;
+
+    display: grid;
+    grid-template-columns: 
+        var(--gutter-width) 1fr var(--gutter-width);
+}
+
+.main-layout > * {
+    grid-column: 2;
+}
+
+.main-layout .full {
+    grid-column: 1 / -1;
+}
+
+.container {
+    --content-width: 800px;
+    --gutter-width: 1em;
+
+    max-width: var(--content-width);
+    padding: var(--gutter-width);
+    margin: auto;
+}
